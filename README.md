@@ -37,7 +37,7 @@ The dataset consists of 18 features alongside a target continuous feature indica
 
 **Data Visualization:**
 
-![Cars by Title Status](/images/carsbyTitle.png)
+![Cars by Type Cylinders](/images/carTypeCylinders.png)
 
 ![Fuel Type vs Cylinders](/images/fuelTypeCylinders.png)
 
@@ -63,18 +63,18 @@ The dataset consists of 18 features alongside a target continuous feature indica
 
 
 
-| MODEL | MSE  Train  |  MSE  Test |
-|:---:|:---:|:---:|
-| Lasso Regression |  |  |
-| Ridge Regression |  |  |
-| Decision Tree Regressor  | |  |
-| Gradient Boost Regressor |  |  |
-
+**Regression**|**Train MSE**|**Test MSE**
+:-----:|:-----:|:-----:
+Lasso Regression  |0.39|0.38
+Lasso Regression alpha : 0.02, max\_iter: 100)|0.38|0.38
+Ridge Regression ('rdg\_\_alpha': 0.02)|0.39|0.38
+Decision Tree Regressor (ccp\_alpha': 0.0)|0.014|0.29
+GradientBoostingRegressor(learning\_rate: 0.025)|0.36|0.36
 
 # Summary of Findings
 
-
+![Feature Importance](/images/featureImportance.png)
 
 # Notebook
 
-[Used Car Pricing](/.ipynb)
+[Used Car Pricing](/prompt_II.ipynb)
